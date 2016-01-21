@@ -1,10 +1,9 @@
 # VimConfig
 this is my simple vim config
--------------------------------------
-Jan 21,2016
+
+##########Jan 21,2016##############
 
 simple config for C/C++ and go coding
-
 
 vim plugin list:
 
@@ -30,6 +29,6 @@ protobuf
 
 vimprj
 
--------------------------------------
 
+####################################
 
