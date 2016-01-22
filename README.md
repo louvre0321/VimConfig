@@ -30,5 +30,8 @@ protobuf
 vimprj
 
 nerdtree
+
+gocode
+
 ####################################
 
