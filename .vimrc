@@ -9,6 +9,8 @@ filetype on
 filetype plugin on
 
 set encoding=utf-8
+set fileencodings=utf-8,gbk,gb2312
+set termencoding=utf-8
 "实时搜索功能
 set incsearch
 
@@ -66,6 +68,24 @@ let tagbar_width=32
 " tagbar 子窗口中不显示冗余帮助信息 
 let g:tagbar_compact=1
 " 设置 ctags 对哪些代码元素生成标签
+
+" 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
+nmap <silent><F3> :NERDTreeToggle<CR>
+" " 设置NERDTree子窗口宽度
+let NERDTreeWinSize=22
+" " 设置NERDTree子窗口位置
+let NERDTreeWinPos="right"
+" " 显示隐藏文件
+let NERDTreeShowHidden=1
+" " NERDTree 子窗口中不显示冗余帮助信息
+let NERDTreeMinimalUI=1
+" " 删除文件时自动删除文件对应 buffer
+let NERDTreeAutoDeleteBuffer=1
+
+
+
+
+
 
 let g:tagbar_type_cpp = {
     \ 'kinds' : [
