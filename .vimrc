@@ -1,92 +1,89 @@
-"¶¨Òå¿ì½İ¼üÇ°×º<leader>
+"å®šä¹‰å¿«æ·é”®å‰ç¼€<leader>
 let mapleader=';'
 
 
-"ÎÄ¼şÀàĞÍÕì²â
+"æ–‡ä»¶ç±»å‹ä¾¦æµ‹
 filetype on
 
-"¸ù¾İÎÄ¼şÀàĞÍ²»Í¬¼ÓÔØ¶ÔÓ¦²å¼ş
+"æ ¹æ®æ–‡ä»¶ç±»å‹ä¸åŒåŠ è½½å¯¹åº”æ’ä»¶
 filetype plugin on
 
 set encoding=utf-8
-set fileencodings=utf-8,gbk,gb2312
+set fileencodings=utf-8
 set termencoding=utf-8
-"ÊµÊ±ËÑË÷¹¦ÄÜ
+"å®æ—¶æœç´¢åŠŸèƒ½
 set incsearch
 
-"ËÑË÷Ê±´óĞ¡Ğ´²»Ãô¸Ğ
+"æœç´¢æ—¶å¤§å°å†™ä¸æ•æ„Ÿ
 set ignorecase
 
-"¹Ø±Õ¼æÈİÄ£Ê½
+"å…³é—­å…¼å®¹æ¨¡å¼
 set nocompatible
 
-"vim×ÔÉíÃüÁîĞĞÄ£Ê½ÖÇÄÜ²¹È«
+"vimè‡ªèº«å‘½ä»¤è¡Œæ¨¡å¼æ™ºèƒ½è¡¥å…¨
 set wildmenu
 
-"Ö¸¶¨pathogenÂ·¾¶
+" æŒ‡å®špathogenè·¯å¾„
 runtime bundle/pathogen/autoload/pathogen.vim
-"ÔËĞĞpathogen
+" è¿è¡Œpathogen
 execute pathogen#infect()
 
-"ÅäÉ«·½°¸
+" é…è‰²æ–¹æ¡ˆ
 let g:solarized_termcolors=256
 syntax enable
 syntax on
 set background=dark
-"colorscheme solarized
+" colorscheme solarized
 colorscheme molokai
 
 
-"×ÜÊÇÏÔÊ¾×´Ì¬À¸
+" æ€»æ˜¯æ˜¾ç¤ºçŠ¶æ€æ 
 set laststatus=2
-"ÏÔÊ¾¹â±êµ±Ç°Î»ÖÃ
+" æ˜¾ç¤ºå…‰æ ‡å½“å‰ä½ç½®
 set ruler
-"ÏÔÊ¾ĞĞºÅ
+" æ˜¾ç¤ºè¡Œå·
 set number
-"ÏÔÊ¾¹â±êµ±Ç°Î»ÖÃ
-"set cursorline
-"set cursorcolumn
-"¸ßÁÁÏÔÊ¾ËÑË÷½á¹û
+" æ˜¾ç¤ºå…‰æ ‡å½“å‰ä½ç½®
+" set cursorline
+" set cursorcolumn
+" é«˜äº®æ˜¾ç¤ºæœç´¢ç»“æœ
 set hlsearch
 
-"×´Ì¬À¸
+" çŠ¶æ€æ 
 let g:Powerline_colorscheme='solarized256'
 
-"×ÔÊÊÓ¦²»Í¬ÓïÑÔµÄÖÇÄÜËõ½ø
+" è‡ªé€‚åº”ä¸åŒè¯­è¨€çš„æ™ºèƒ½ç¼©è¿›
 filetype indent on 
 
-"ÉèÖÃ²å¼ş indexer µ÷ÓÃ ctags µÄ²ÎÊı
+" è®¾ç½®æ’ä»¶ indexer è°ƒç”¨ ctags çš„å‚æ•°
 let g:indexer_ctagsCommandLineOptions="--c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
 
 
-" ÉèÖÃ tagbar ×Ó´°¿ÚµÄÎ»ÖÃ³öÏÖÔÚÖ÷±à¼­ÇøµÄ×ó±ß 
+" è®¾ç½® tagbar å­çª—å£çš„ä½ç½®å‡ºç°åœ¨ä¸»ç¼–è¾‘åŒºçš„å·¦è¾¹ 
 let tagbar_left=1 
-" ÉèÖÃÏÔÊ¾£¯Òş²Ø±êÇ©ÁĞ±í×Ó´°¿ÚµÄ¿ì½İ¼ü¡£ËÙ¼Ç£ºtag list 
+" è®¾ç½®æ˜¾ç¤ºï¼éšè—æ ‡ç­¾åˆ—è¡¨å­çª—å£çš„å¿«æ·é”®ã€‚é€Ÿè®°ï¼štag list 
 nmap <silent> <F4> :TagbarToggle<CR>
-" ÉèÖÃ±êÇ©×Ó´°¿ÚµÄ¿í¶È 
+" è®¾ç½®æ ‡ç­¾å­çª—å£çš„å®½åº¦ 
 let tagbar_width=32 
-" tagbar ×Ó´°¿ÚÖĞ²»ÏÔÊ¾ÈßÓà°ïÖúĞÅÏ¢ 
+" tagbar å­çª—å£ä¸­ä¸æ˜¾ç¤ºå†—ä½™å¸®åŠ©ä¿¡æ¯ 
 let g:tagbar_compact=1
-" ÉèÖÃ ctags ¶ÔÄÄĞ©´úÂëÔªËØÉú³É±êÇ©
+" è®¾ç½® ctags å¯¹å“ªäº›ä»£ç å…ƒç´ ç”Ÿæˆæ ‡ç­¾
 
-" Ê¹ÓÃ NERDTree ²å¼ş²é¿´¹¤³ÌÎÄ¼ş¡£ÉèÖÃ¿ì½İ¼ü£¬ËÙ¼Ç£ºfile list
+" ä½¿ç”¨ NERDTree æ’ä»¶æŸ¥çœ‹å·¥ç¨‹æ–‡ä»¶ã€‚è®¾ç½®å¿«æ·é”®ï¼Œé€Ÿè®°ï¼šfile list
 nmap <silent><F3> :NERDTreeToggle<CR>
-" " ÉèÖÃNERDTree×Ó´°¿Ú¿í¶È
+" è®¾ç½®NERDTreeå­çª—å£å®½åº¦
 let NERDTreeWinSize=22
-" " ÉèÖÃNERDTree×Ó´°¿ÚÎ»ÖÃ
+" è®¾ç½®NERDTreeå­çª—å£ä½ç½®
 let NERDTreeWinPos="right"
-" " ÏÔÊ¾Òş²ØÎÄ¼ş
+" æ˜¾ç¤ºéšè—æ–‡ä»¶
 let NERDTreeShowHidden=1
-" " NERDTree ×Ó´°¿ÚÖĞ²»ÏÔÊ¾ÈßÓà°ïÖúĞÅÏ¢
+" NERDTree å­çª—å£ä¸­ä¸æ˜¾ç¤ºå†—ä½™å¸®åŠ©ä¿¡æ¯
 let NERDTreeMinimalUI=1
-" " É¾³ıÎÄ¼şÊ±×Ô¶¯É¾³ıÎÄ¼ş¶ÔÓ¦ buffer
+" åˆ é™¤æ–‡ä»¶æ—¶è‡ªåŠ¨åˆ é™¤æ–‡ä»¶å¯¹åº” buffer
 let NERDTreeAutoDeleteBuffer=1
 
 
-
-
-
-
+"cpp tags é…ç½®
 let g:tagbar_type_cpp = {
     \ 'kinds' : [
         \ 'd:macros:1',
@@ -120,6 +117,34 @@ let g:tagbar_type_cpp = {
      \ }
 \ }
 
+"go tags é…ç½®
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
 
 
 
