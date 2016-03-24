@@ -33,5 +33,9 @@ nerdtree
 
 gocode
 
+########May 25,2016, add swift language
+
+swift
+
 ####################################
 
